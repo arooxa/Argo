@@ -1,0 +1,26 @@
+Layout for single user project management tool:
+
+Dashboard: 
+- multiple card components allowing access to all boards
+- on click of card the respective board should open
+Board: 
+- create groups
+- delete groups
+
+Group:
+- Each group can have any number of items
+- Each group can expand and compress to show or hide items  
+- add and remove columns (must be part of given column list)
+- You can add and delete items from group
+
+Item:
+- Each item has the fields set by the group's columns
+- Editable after being created originally
+- user(s) should be able to comment on item
+
+Features for Item:
+-Title
+-Status: Not started, Working on it, Published
+-Priority: Low, Medium, High
+-Date
+-Tags

@@ -1,0 +1,1 @@
+//each Group component should have a list of item components displayed
