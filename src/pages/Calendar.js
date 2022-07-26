@@ -1,17 +1,16 @@
-import * as React from "react";
-import Display from "../components/Workspace/Display";
-import styled from "styled-components";
+import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
+import styled from "styled-components";
+import CalendarContainer from "../containers/CalendarContainer";
 
-const Manage = () => {
-
+function Calendar() {
   return (
     <Background>
-      <Sidebar/>
-      <Display />
+      <Sidebar />
+      <CalendarContainer />
     </Background>
   );
-};
+}
 
 const Background = styled.section`
   height: 100vh;
@@ -29,5 +28,4 @@ const Background = styled.section`
   background: #e9e9e9;
 `;
 
-
-export default Manage;
+export default Calendar;

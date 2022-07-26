@@ -1,17 +1,16 @@
-import * as React from "react";
-import Display from "../components/Workspace/Display";
-import styled from "styled-components";
+import React from 'react'
 import Sidebar from "../components/Sidebar/Sidebar";
+import styled from "styled-components";
 
-const Manage = () => {
+function Profile() {
+    return (
+        <div>
+            <Sidebar/>
+            <h1>This is Profile Page</h1>
+        </div>
+    )
+}
 
-  return (
-    <Background>
-      <Sidebar/>
-      <Display />
-    </Background>
-  );
-};
 
 const Background = styled.section`
   height: 100vh;
@@ -25,9 +24,8 @@ const Background = styled.section`
   &::-webkit-scrollbar {
     display: none;
   }
-  //border: 5px solid black;
-  background: #e9e9e9;
+  border: 5px solid black;
+  background: white;
 `;
 
-
-export default Manage;
+export default Profile

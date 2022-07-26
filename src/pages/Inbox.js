@@ -1,17 +1,16 @@
-import * as React from "react";
-import Display from "../components/Workspace/Display";
-import styled from "styled-components";
+import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
+import styled from "styled-components";
+import InboxContainer from "../containers/InboxContainer";
 
-const Manage = () => {
-
+function Inbox() {
   return (
     <Background>
-      <Sidebar/>
-      <Display />
+      <Sidebar />
+      <InboxContainer />
     </Background>
   );
-};
+}
 
 const Background = styled.section`
   height: 100vh;
@@ -29,5 +28,4 @@ const Background = styled.section`
   background: #e9e9e9;
 `;
 
-
-export default Manage;
+export default Inbox;

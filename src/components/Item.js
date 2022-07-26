@@ -1,1 +1,0 @@
-//each item component should have all the fields of the list component
